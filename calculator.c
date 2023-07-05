@@ -149,7 +149,7 @@ void homepage(){
         scanf("%f", &n1);
         printf("Enter your second number: ");
         scanf("%f", &n2);
-        d = subtract(n1, n2);
+        d = divide(n1, n2);
         printf("\n");
         printf("Resultant: %.2f\n", d);
         printf("\n");
