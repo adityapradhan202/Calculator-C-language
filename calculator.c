@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 void homepage();
-float add(int x, int y);
-float subtract(int x, int y);
-float multiply(int x, int y);
-float divide(int x, int y);
+float add(float x, float y);
+float subtract(float x, float y);
+float multiply(float x, float y);
+float divide(float x, float y);
 
 void further_operations(float v);
 void further_add(float n);
@@ -26,16 +26,16 @@ int main(){
 
 
 
-float add(int x, int y){
+float add(float x, float y){
     return x + y;
 }
-float subtract(int x, int y){
+float subtract(float x, float y){
     return x - y;
 }
-float multiply(int x, int y){
+float multiply(float x, float y){
     return x * y;
 }
-float divide(int x, int y){
+float divide(float x, float y){
     return x / y;
 }
 
@@ -65,7 +65,7 @@ void homepage(){
         scanf("%f", &n2);
         a = add(n1, n2);
         printf("\n");
-        printf("Resultant: %.2f\n", a);
+        printf("Resultant: %f\n", a);
         printf("\n");
         printf("Enter 'y' to apply futher arithmetic operations to this resultant.\n");
         printf("Otherwise enter 'n'.\n");
@@ -95,7 +95,7 @@ void homepage(){
         scanf("%f", &n2);
         s = subtract(n1, n2);
         printf("\n");
-        printf("Resultant: %.2f\n", s);
+        printf("Resultant: %f\n", s);
         printf("\n");
         printf("Enter 'y' to apply futher arithmetic operations to this resultant.\n");
         printf("Otherwise enter 'n'.\n");
@@ -123,7 +123,7 @@ void homepage(){
         scanf("%f", &n2);
         m = multiply(n1, n2);
         printf("\n");
-        printf("Resultant: %.2f\n", m);
+        printf("Resultant: %f\n", m);
         printf("\n");
         printf("Enter 'y' to apply futher arithmetic operations to this resultant.\n");
         printf("Otherwise enter 'n'.\n");
@@ -151,7 +151,7 @@ void homepage(){
         scanf("%f", &n2);
         d = divide(n1, n2);
         printf("\n");
-        printf("Resultant: %.2f\n", d);
+        printf("Resultant: %f\n", d);
         printf("\n");
         printf("Enter 'y' to apply futher arithmetic operations to this resultant.\n");
         printf("Otherwise enter 'n'.\n");
@@ -241,7 +241,7 @@ void further_add(float n){
     scanf("%f", &n1);
     n += n1;
     printf("\n");
-    printf("Resultant: %.2f", n);
+    printf("Resultant: %f", n);
     further_operations(n);
 }
 void further_subtract(float n){
@@ -250,7 +250,7 @@ void further_subtract(float n){
     scanf("%f", &n1);
     n -= n1;
     printf("\n");
-    printf("Resultant: %.2f", n);
+    printf("Resultant: %f", n);
     further_operations(n);
 }
 void further_multipy(float n){
@@ -259,7 +259,7 @@ void further_multipy(float n){
     scanf("%f", &n1);
     n *= n1;
     printf("\n");
-    printf("Resultant: %.2f", n);
+    printf("Resultant: %f", n);
     further_operations(n);
 }
 void further_divide(float n){
@@ -268,7 +268,7 @@ void further_divide(float n){
     scanf("%f", &n1);
     n /= n1;
     printf("\n");
-    printf("Resultant: %.2f", n);
+    printf("Resultant: %f", n);
     further_operations(n);
 }
 
